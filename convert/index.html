@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h1>Currency converter</h1>
+      <hr>
+
+      <div class="form-group">
+        <label for="amount">Amount to convert :</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+      </div>
+
+      <div class="select-row">
+        <div class="field">
+          <label for="from">From</label>
+          <select id="from">
+            <option value="DZD">DZD</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="to">To</label>
+          <select id="to">
+            <option value="DZD">DZD</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="convertBtn">Convert</button>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="calcul.js"></script>
+</body>
+</html>
